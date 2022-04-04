@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+main{
+    background-color: var(--very-dark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    color: var(--white);
+    background-color: var(--dark-blue);
+    padding: 2em;
+    border-radius: 2em;
+    max-width: 380px;
+
+}
+
+.card--icon{
+    width: 40px;
+    height: 40px;
+    padding: .7em;
+    background-color: rgba(255, 255, 255, .06);
+    border-radius: 50%;
+}
+
+.card--icon img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+h1{
+    font-size: 24px;
+    margin: 1em 0;
+}
+
+p{
+    color: var(--light-grey);
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 1em;
+    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+li{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .06);
+    border-radius: 50%;
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-grey);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+li:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+li.selected{
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+
+button{
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: .8em 0;
+    border-radius: 2em;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 1em;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+.card-thank{
+    text-align: center;
+    display: none;
+}
+
+.card-thank .selection{
+    background-color: rgba(255, 255, 255, .06);
+    color: var(--orange);
+    display: inline-block;
+    border-radius: 2em;
+    padding: .2em 1em;
+    margin-top: 1.5em;
+}
